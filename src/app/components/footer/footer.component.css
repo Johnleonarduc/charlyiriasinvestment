@@ -1,0 +1,27 @@
+footer{
+    background-color: #f58634;
+    color: white;
+    /* width: 100%; */
+    max-width: 100%;
+    padding: 1em 2em;
+    line-height: 1.3em;
+    font-size: 0.7em;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+fa-icon{
+    margin: .5em;
+}
+
+.address a:first-of-type{
+    margin-right: 1em;
+}
+
+.address p {
+    font-size: .8em;
+}

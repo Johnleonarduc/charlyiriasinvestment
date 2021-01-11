@@ -10,7 +10,7 @@ header{
 }
 
 h1{
-    font-size: .7em;
+    font-size: .8em;
     color: #1ea958;
 }
 
@@ -19,5 +19,5 @@ span{
 }
 
 #header-logo {
-    width: 30px;
+    width: 60%;
 }
