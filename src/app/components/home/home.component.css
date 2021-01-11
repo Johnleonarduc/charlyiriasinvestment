@@ -8,6 +8,7 @@
     width: 100%;
     background-image: url('../../../assets/home/small/hero.jpg');
     background-position: left;
+    background-repeat: no-repeat;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -69,7 +70,7 @@ p{
 
 .card {
     box-sizing: border-box;
-    box-shadow: 2px 2px 5px rgba(99, 97, 97, 0.678);
+    box-shadow: 2px 2px 5px rgba(133, 131, 131, 0.678);
     border-radius: .5rem;
     background-color: white;
 }
@@ -85,7 +86,8 @@ p{
     border-radius: 1em;
     color: white;
     background-color: #f58634;
-    padding: .5em 2em;
+    padding: 0.8em 2.5em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -157,13 +159,14 @@ p{
 
 #discover-pakages h2 {
     color: #f58634;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .package{
     display: grid;
     justify-items: center;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 .package img {
@@ -174,6 +177,7 @@ p{
     color: #1ea958;
     margin-bottom: 0;
     font-weight: bolder;
+    margin-top: .5em;
 }
 
 .package p{
@@ -185,11 +189,8 @@ p{
 
 #who-we-are {
     padding: 0 1em;
+    margin-bottom: 2em;
 }
-
-/* .who-we-are-body{
-
-} */
 
 .ciil-brief-about{
     display: grid;
@@ -214,8 +215,89 @@ p{
     margin: 1em 0 0 0;
 }
 
+
+#hear-from-partners{
+    display: grid;
+    grid-template: 
+    "left-arrow     content     right-arrow"
+    /.5fr           3fr         .5fr;
+    justify-items: center;
+    margin: 2em 0;
+}
+
+.left-arrow {
+    grid-area: left-arrow;
+}
+
+.right-arrow {
+    grid-area: right-arrow;
+}
+
+.right-arrow, .left-arrow {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #1ea958;
+}
+
+.slide-indicators  {
+    margin-top: 1em;
+}
+
+.slide-indicators fa-icon{
+    margin: .2em;
+}
+
+.hear-from-partners-content {
+    grid-area: content;
+    display: grid;
+    justify-items: center;
+    text-align: justify;
+    width: 100%;
+    padding: 0;
+    margin:0
+}
+
+.hear-from-partners-content figcaption {
+    text-align: right;
+}
+
+.hear-from-partners-content figure {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.hear-from-partners-content h3 {
+    color: #1ea958;
+    margin-bottom: 0;
+}
+
+.hear-from-partners-content img {
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    bottom: -3em;
+
+}
+
+.content-testimonial {
+    background-color: #1ea958;
+    padding: 5em 1em 1em 1em;
+    color: white;
+    display: grid;
+    justify-items: center;
+}
+
+.content-testimonial figcaption{
+    display: grid;
+    justify-self: end;
+}
+
 #faq{
-    line-height: 1.3em;
     width: 90%;
     padding-bottom: 1em;
     display: grid;
@@ -226,7 +308,7 @@ p{
 #faq h2 {
     margin: 0;
     width: 100%;
-    /* padding: 0; */
+    font-size: 1.3em;
 }
 
 .faq-body{
@@ -245,4 +327,31 @@ p{
 
 #call-to-action figure {
     color: #1ea958;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px){
+    .hero-overlay h1{
+        font-size: 1.7em;
+        /* line-height: 1.5em; */
+    }
+
+    :host{
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .btn{
+        padding: 1em 3em;
+        font-size: 1.2em;
+    }
+
+    #discover-pakages h2 {
+        font-size: 1.5em;
+    }
+
+    
+.why-invest-with-us-lower-part div {
+    width: 77%;
+    }
 }

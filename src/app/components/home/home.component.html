@@ -49,16 +49,19 @@
         <img src="assets/home/small/forex.png" alt="">
         <h4>Forex Investment</h4>
         <p>Earn 30% returns on your investment in 30 days, guaranteed.</p>
+        <button class="btn">Learn More</button>
     </div>
     <div class="package">
         <img src="assets/home//small/contribution.png" alt="">
         <h4>Food Contribution</h4>
         <p>Discover how you can secure food for yourself/family.</p>
+        <button class="btn">Learn More</button>
     </div>
     <div class="package">
         <img src="assets/home/small/Finance.png" alt="">
         <h4>Savings and loans</h4>
         <p>Save your money for targeted goals and easily access loans.</p>
+        <button class="btn">Learn More</button>
     </div>
 </section>
 <hr>
@@ -72,7 +75,7 @@
             </div>
             <hr>
             <div class="ciil-unique-vals">
-                <h4>Our unique value</h4>
+                <h4>Our unique values</h4>
                 <ul>
                     <li><strong>Trust</strong>- Gained from all our stakeholders and general public.</li>
                    <li><strong>Excellence</strong>- In achieving the highest professional standards in all our dealings.</li>
@@ -86,19 +89,30 @@
 </section>
 <hr>
 <section id="hear-from-partners">
-    <div class="left-arrow"></div>
-    <div class="card">
+    <div class="left-arrow">
+        <fa-icon [icon]="faChevronCircleLeft" size="2x"></fa-icon>
+    </div>
+    <div class="hear-from-partners-content card">
         <h3>Hear from our partners</h3>
         <figure>
-            <img src="" alt="">
-            <q>
-                I have been investing with Charly Irias Investment limited for around 7 months. They have not only offered a great interest rate but also pay on time. No complaint at all
-            </q>
-            <figcaption>Ebi K.</figcaption>
+            <img src="assets/home/testimonial.jpg" alt="">
+            <div class="content-testimonial">
+                <q>
+                    I have been investing with Charly Irias Investment limited for around 7 months. They have not only offered a great interest rate but also pay on time. No complaint at all
+                </q>
+                <figcaption>Ebi K.</figcaption>
+                <div class="slide-indicators">
+                    <fa-icon [icon]="faCircle"></fa-icon>
+                    <fa-icon [icon]="faCircle"></fa-icon>
+                    <fa-icon [icon]="faCircle"></fa-icon>
+                    <fa-icon [icon]="faCircle"></fa-icon>
+                </div>
+            </div>
         </figure>
-        <div></div>
     </div>
-    <div class="right-arrow"></div>
+    <div class="right-arrow">
+        <fa-icon [icon]="faChevronCircleRight" size="2x"></fa-icon>
+    </div>
 </section>
 <hr>
 <section id="faq" class="card">

@@ -1,5 +1,5 @@
 header{
-    height: 70px;
+    height: 5em;
     display: grid;
     grid-template: 
     "logo   bizName     menu"
@@ -19,5 +19,5 @@ span{
 }
 
 #header-logo {
-    width: 60%;
+    width: 2em;
 }

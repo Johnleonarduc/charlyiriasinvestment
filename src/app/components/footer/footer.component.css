@@ -1,12 +1,13 @@
 footer{
     background-color: #f58634;
     color: white;
-    /* width: 100%; */
     max-width: 100%;
     padding: 1em 2em;
     line-height: 1.3em;
     font-size: 0.7em;
     text-align: justify;
+    display: grid;
+    gap: 1em;
 }
 
 a {
@@ -15,13 +16,26 @@ a {
 }
 
 fa-icon{
-    margin: .5em;
+    margin: .3em;
 }
 
+.social-icons fa-icon {
+    font-size: 1.5em;
+}
+
+.social-icons {
+    padding-top: 1em;
+}
 .address a:first-of-type{
     margin-right: 1em;
 }
 
 .address p {
     font-size: .8em;
+}
+
+@media screen and (min-width: 600px){
+    footer {
+        font-size: 0.8em;
+    }
 }
