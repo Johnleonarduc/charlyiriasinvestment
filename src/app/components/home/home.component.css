@@ -344,7 +344,7 @@ strong {
     justify-self: end;
 }
 
-#faq{
+#faq{   
     width: 90%;
     padding-bottom: 1em;
     display: grid;
@@ -398,7 +398,6 @@ strong {
         font-size: 1.5em;
     }
 
-    
     .why-invest-with-us-lower-part div {
         width: 77%;
     }
@@ -442,7 +441,7 @@ strong {
     #why-invest-with-us {
         margin-top: 2em;
     }
-    
+
     .why-invest-with-us-lower-part div {
         line-height: 1.5em;
         width: 79.5%;
@@ -455,7 +454,6 @@ strong {
         "discover-text  discover-text   discover-text"
         "package1       package2        package3";
         gap: 2em;
-
     }
 
     #discover-pakages h2{
@@ -473,15 +471,17 @@ strong {
     .package3 {
         grid-area: package3;
     }
-    
+
     .package {
         display: grid;
         grid-template: 
         "package-image" 3fr
         "package-title" 1fr
-        "package-descr" 2fr
+        "package-descr" 3fr
         "package-btn"  2fr
         ;
+        align-items: center;
+        justify-items: center;
     }
 
     .package img{
@@ -490,6 +490,7 @@ strong {
 
     .package h4{
         grid-area: package-title;
+        text-align: center;
     }
 
     .package p{
@@ -505,14 +506,12 @@ strong {
         /* margin: 2em 0; */
     }
     
-
     .who-we-are-body{
         display: grid;
         grid-template: 
         "wwa-heading    wwa-unique" 4em
         "wwa-about      wwa-unique";
     }
-
 
     .ciil-brief-about{
         grid-area: wwa-about;
@@ -535,98 +534,80 @@ strong {
         font-size: 0.8em;
         padding: 1em 2em;
     }
-
-/* 
+    
     #hear-from-partners{
+        margin-top: 0;
+    }
+
+    .hear-from-partners-content {
         display: grid;
         grid-template: 
-        "test-heading   test-heading    test-heading"
-        "left-arrow     content         right-arrow"
-        /.5fr           3fr         .5fr;
-        justify-items: center;
-        margin: 2em 0;
-    } */
-    
-    /* #hear-from-partners h3 {
-        grid-area: test-heading;
-        color: #1ea958;
-        padding: 1em 0;
-        font-size: 1em;
-    } */
-    
-    /* .left-arrow {
-        grid-area: left-arrow;
-    } */
-/*     
-    .right-arrow {
-        grid-area: right-arrow;
-    }
-     */
-    /* .right-arrow, .left-arrow {
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        color: #1ea958;
-    } */
-    
-    /* .slide-indicators  {
-        margin-top: 1em;
-    } */
-/*     
-    .slide-indicators fa-icon{
-        margin: .2em;
-    } */
-    
-    /* .hear-from-partners-content {
-        grid-area: content;
-        display: grid;
-        justify-items: center;
-        text-align: justify;
-        width: 100%;
-        padding: 0;
-        margin:0
-    } */
-    
-    /* .hear-from-partners-content figcaption {
-        text-align: right;
-    } */
-    
-    /* .hear-from-partners-content figure {
-        width: 100%;
-        margin: 0;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-    } */
-/*     
-    .hear-from-partners-content h3 {
-        color: #1ea958;
-        margin-bottom: 0;
-    }
-     */
-    /* .hear-from-partners-content img {
-        width: 50%;
-        border-radius: 50%;
-        display: block;
-        position: relative;
-        bottom: -3em;
-    
-    } */
-/*     
-    .content-testimonial {
-        background-color: #1ea958;
-        padding: 5em 1em 1em 1em;
-        color: white;
-        display: grid;
-        justify-items: center;
-    } */
-    
-    /* .content-testimonial figcaption{
-        display: grid;
-        justify-self: end;
-    } */
-    
+        "slide-img  slide-content"
+        ;
+        justify-items: end;
+        align-items: start;
 
+    }
+    
+    .hear-from-partners-content img {
+        grid-area: slide-img;
+        bottom:0;
+        right: -3.5em;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 80%;
+
+    }
+
+    .content-testimonial {
+        grid-area: slide-content;
+        display: grid;
+        grid-template: 
+        "slide-content-test"
+        "slide-content-author"
+        "slide-indicator";
+        padding: 2em;
+        gap: 1em;
+    }
+
+    
+    #hear-from-partners h3 {
+        justify-self: start;
+        margin-left: 15%;
+        font-size: 1.5em;
+    } 
+
+    .content-testimonial q{
+        grid-area: slide-content-test;
+        width: 80%;
+    }
+    
+    .content-testimonial figcaption {
+        grid-area: slide-content-author;
+        width: 80%;
+        justify-self: center;
+    }
+    
+    .slide-indicators {
+        grid-area: slide-indicator;
+    }
+
+    #faq-call-to-action {
+        display: grid;
+        grid-template: 
+        "faq   call-to-action"
+        ;
+        align-items: center;
+    }
+
+    #faq {
+        grid-area: faq;
+    }
+
+    #call-to-action {
+        grid-area: call-to-action;
+        height: max-content;
+    }
 
 }
 
