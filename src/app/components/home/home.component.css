@@ -477,7 +477,7 @@ strong {
         grid-template: 
         "package-image" 3fr
         "package-title" 1fr
-        "package-descr" 3fr
+        "package-descr" 2fr
         "package-btn"  2fr
         ;
         align-items: center;
