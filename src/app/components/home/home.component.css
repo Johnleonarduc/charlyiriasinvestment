@@ -42,6 +42,7 @@ h1,h2,h3,h4 {
 #intro-info p {
     font-weight: bold;
     padding: 1em 0;
+    line-height: 1.5;
 }
 
 
@@ -158,8 +159,8 @@ strong {
 }
 
 .why-invest-with-us-lower-part div {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
     background-color: white;
     padding: 1em 1em 1em 0.5em;
     line-height: 1.3em;
@@ -168,7 +169,7 @@ strong {
     margin-right: auto;
     position: relative;
     top: -1em;
-    box-shadow: 3px 3px 5px rgba(90, 88, 88, 0.788);
+    box-shadow: 2px 2px 7px rgba(179, 176, 176, 0.678);
 }
 
 .why-invest-with-us-lower-part ul {
@@ -227,8 +228,18 @@ strong {
     gap: 1em;
 }
 
+.ciil-brief-about:after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 2em;
+    border-bottom: 2px groove lightgray;
+}
+
 .ciil-brief-about p{
     text-align: justify;
+    line-height: 1.5em;
 }
 
 .ciil-unique-vals {
@@ -240,17 +251,25 @@ strong {
 .ciil-unique-vals h4 {
     color: #f58634;
     font-size: 1.3em;
-    margin: 1em 0;
+    margin: 0 0 1em 0;
 }
 
 
 #hear-from-partners{
     display: grid;
     grid-template: 
-    "left-arrow     content     right-arrow"
+    "test-heading   test-heading    test-heading"
+    "left-arrow     content         right-arrow"
     /.5fr           3fr         .5fr;
     justify-items: center;
     margin: 2em 0;
+}
+
+#hear-from-partners h3 {
+    grid-area: test-heading;
+    color: #1ea958;
+    padding: 1em 0;
+    font-size: 1em;
 }
 
 .left-arrow {
@@ -380,7 +399,234 @@ strong {
     }
 
     
-.why-invest-with-us-lower-part div {
-    width: 77%;
+    .why-invest-with-us-lower-part div {
+        width: 77%;
     }
 }
+
+@media screen and (min-width:800px){
+    #hero {
+        height: 40vh;
+        background-position: top;
+    }
+
+    #intro-info {
+        padding: 1em 4em;
+        display: grid;
+        grid-template: 
+        "para       para"
+        "list       list"
+        "caption    get-started" max-content;
+        row-gap: .5em;
+        margin-bottom: 2em;
+    }
+
+    .intro-info-p{
+        grid-area: para;
+    }
+
+    .intro-info-ul {
+        grid-area: list;
+    }
+
+    .intro-info-caption {
+        grid-area: caption;
+        height: max-content;
+    }
+
+    .intro-info-getstarted {
+        grid-area: get-started;
+        height: max-content;
+    }
+
+    #why-invest-with-us {
+        margin-top: 2em;
+    }
+    
+    .why-invest-with-us-lower-part div {
+        line-height: 1.5em;
+        width: 79.5%;
+    }
+
+    #discover-pakages {
+        margin: 2em 0;
+        padding: 0 4em;
+        grid-template: 
+        "discover-text  discover-text   discover-text"
+        "package1       package2        package3";
+        gap: 2em;
+
+    }
+
+    #discover-pakages h2{
+        grid-area: discover-text;
+    }
+
+    .package1 {
+        grid-area: package1;
+    }
+
+    .package2 {
+        grid-area: package2;
+    }
+
+    .package3 {
+        grid-area: package3;
+    }
+    
+    .package {
+        display: grid;
+        grid-template: 
+        "package-image" 3fr
+        "package-title" 1fr
+        "package-descr" 2fr
+        "package-btn"  2fr
+        ;
+    }
+
+    .package img{
+        grid-area: package-image;
+    }
+
+    .package h4{
+        grid-area: package-title;
+    }
+
+    .package p{
+        grid-area: package-descr;
+    }
+
+    .package button {
+        grid-area: package-btn;
+    }
+
+    #who-we-are {
+        padding: 0 4em;
+        /* margin: 2em 0; */
+    }
+    
+
+    .who-we-are-body{
+        display: grid;
+        grid-template: 
+        "wwa-heading    wwa-unique" 4em
+        "wwa-about      wwa-unique";
+    }
+
+
+    .ciil-brief-about{
+        grid-area: wwa-about;
+    }
+    
+    .ciil-brief-about:after{
+        display: none;
+    }
+    
+    .ciil-unique-vals {
+        grid-area: wwa-unique;
+        padding: 1em;
+    }
+    
+    .who-we-are-header {
+        grid-area: wwa-heading;
+    }
+    
+    .btn {
+        font-size: 0.8em;
+        padding: 1em 2em;
+    }
+
+/* 
+    #hear-from-partners{
+        display: grid;
+        grid-template: 
+        "test-heading   test-heading    test-heading"
+        "left-arrow     content         right-arrow"
+        /.5fr           3fr         .5fr;
+        justify-items: center;
+        margin: 2em 0;
+    } */
+    
+    /* #hear-from-partners h3 {
+        grid-area: test-heading;
+        color: #1ea958;
+        padding: 1em 0;
+        font-size: 1em;
+    } */
+    
+    /* .left-arrow {
+        grid-area: left-arrow;
+    } */
+/*     
+    .right-arrow {
+        grid-area: right-arrow;
+    }
+     */
+    /* .right-arrow, .left-arrow {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        color: #1ea958;
+    } */
+    
+    /* .slide-indicators  {
+        margin-top: 1em;
+    } */
+/*     
+    .slide-indicators fa-icon{
+        margin: .2em;
+    } */
+    
+    /* .hear-from-partners-content {
+        grid-area: content;
+        display: grid;
+        justify-items: center;
+        text-align: justify;
+        width: 100%;
+        padding: 0;
+        margin:0
+    } */
+    
+    /* .hear-from-partners-content figcaption {
+        text-align: right;
+    } */
+    
+    /* .hear-from-partners-content figure {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    } */
+/*     
+    .hear-from-partners-content h3 {
+        color: #1ea958;
+        margin-bottom: 0;
+    }
+     */
+    /* .hear-from-partners-content img {
+        width: 50%;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        bottom: -3em;
+    
+    } */
+/*     
+    .content-testimonial {
+        background-color: #1ea958;
+        padding: 5em 1em 1em 1em;
+        color: white;
+        display: grid;
+        justify-items: center;
+    } */
+    
+    /* .content-testimonial figcaption{
+        display: grid;
+        justify-self: end;
+    } */
+    
+
+
+}
+
