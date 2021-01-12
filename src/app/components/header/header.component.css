@@ -10,6 +10,7 @@ header{
 }
 
 h1{
+    font-weight: bold;
     font-size: .8em;
     color: #1ea958;
 }
@@ -20,4 +21,16 @@ span{
 
 #header-logo {
     width: 2em;
+}
+
+@media screen and (min-width: 600px){
+    h1{
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 800px){
+    h1{
+        font-size: 1.3em;
+    }
 }
