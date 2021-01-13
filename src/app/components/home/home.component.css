@@ -1,6 +1,11 @@
 :host{
     padding: 0;
     margin: 0;
+
+}
+
+main {
+    padding-top: 5em;
 }
 
 h1,h2,h3,h4 {
@@ -405,27 +410,39 @@ strong {
 
 @media screen and (min-width:800px){
     #hero {
-        height: 40vh;
+        height: 30vh;
         background-position: top;
     }
 
+    .hero-overlay h1{
+       color: rgba(255, 255, 255, 0.9);
+    }
+    
+    
+    main {
+        padding-top: 3em;
+    }
+
     #intro-info {
-        padding: 1em 4em;
+        padding: 0 4em;
         display: grid;
         grid-template: 
         "para       para"
         "list       list"
         "caption    get-started" max-content;
-        row-gap: .5em;
+        row-gap: 0;
         margin-bottom: 2em;
+        font-size: .8em;
     }
 
     .intro-info-p{
         grid-area: para;
+        margin: 0;
     }
 
     .intro-info-ul {
         grid-area: list;
+        margin-top: 0;
     }
 
     .intro-info-caption {
@@ -436,6 +453,12 @@ strong {
     .intro-info-getstarted {
         grid-area: get-started;
         height: max-content;
+        margin: 0;
+        padding: .2em;
+    }
+
+    .intro-info-getstarted p{
+        padding-bottom: 0  !important;
     }
 
     #why-invest-with-us {
