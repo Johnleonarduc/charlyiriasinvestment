@@ -3,18 +3,16 @@
     <h1><span>CHARLY </span>IRIAS INVESTMENT</h1>
     <fa-icon id="hambugger" [icon]="faBars" size="2x" [styles]="{'stroke': '#1ea958', 'color': '#1ea958'}" [ngClass]="{ 'show': !navbarOpen, 'dontshow': navbarOpen}" (click)="toggleNav()"></fa-icon>
      <nav class="desk-menu">
-         <a href="#">HOME</a>
-         <a href="#">PRODUCTS</a>
-         <a href="#">ABOUT US</a>
-         <a href="#">FAQ</a>
-         <a href="#">CONTACT US</a>
+         <a routerLinkActive = "is-active" [routerLink]="['home']">HOME</a>
+         <a routerLinkActive = "is-active" [routerLink]="['products']">PRODUCTS</a>
+         <a routerLinkActive = "is-active" [routerLink]="['about']">ABOUT US</a>
+         <a routerLinkActive = "is-active" [routerLink]="['contact-us']">CONTACT US</a>
      </nav>
      <span class="ham-close-btn" (click)="toggleNav()" [ngClass]="{ 'show': navbarOpen, 'dontshow': !navbarOpen }">&times;</span> 
      <div id="hamtimes" [ngClass]="{ 'show': navbarOpen, 'dontshow': !navbarOpen }" >
-        <a class="navitem" href="#">HOME</a>
-         <a class="navitem" href="#">PRODUCTS</a>
-         <a class="navitem" href="#">ABOUT US</a>
-         <a class="navitem" href="#">FAQ</a>
-         <a class="navitem nav-last" href="#">CONTACT US</a>
+        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['home']">HOME</a>
+        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['products']">PRODUCTS</a>
+        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['about']">ABOUT US</a>
+        <a class="navitem nav-last" routerLinkActive = "is-active" [routerLink]="['contact-us']">CONTACT US</a>
     </div>
 </header>
