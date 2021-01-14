@@ -12,6 +12,10 @@ h1,h2,h3,h4 {
     font-weight: bold;
 }
 
+ul li {
+    margin-bottom: .5em;
+}
+
 #hero {
     height: 30vh;
     width: 100%;
@@ -60,6 +64,11 @@ p{
     line-height: 1em;
 }
 
+.section-title{
+    text-transform: capitalize;
+    font-size: 1.3em !important;
+}
+
 .intro-info-caption{
     text-align: center;
     border: 2px solid #f58634;
@@ -68,7 +77,7 @@ p{
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    padding: .5em;
+    padding: 1em;
 }
 
 .intro-info-caption p {
@@ -383,6 +392,11 @@ strong {
     margin-bottom: 1em;
 }
 
+#call-to-action .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+} 
+
 @media screen and (min-width: 600px){
     .hero-overlay h1{
         font-size: 1.7em;
@@ -390,7 +404,7 @@ strong {
     }
 
     :host{
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1.5em;
     }
 
@@ -409,8 +423,9 @@ strong {
 }
 
 @media screen and (min-width:800px){
+
     #hero {
-        height: 30vh;
+        height: 40vh;
         background-position: top;
     }
 

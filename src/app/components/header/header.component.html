@@ -3,16 +3,18 @@
     <h1><span>CHARLY </span>IRIAS INVESTMENT</h1>
     <fa-icon id="hambugger" [icon]="faBars" size="2x" [styles]="{'stroke': '#1ea958', 'color': '#1ea958'}" [ngClass]="{ 'show': !navbarOpen, 'dontshow': navbarOpen}" (click)="toggleNav()"></fa-icon>
      <nav class="desk-menu">
-         <a routerLinkActive = "is-active" [routerLink]="['home']">HOME</a>
-         <a routerLinkActive = "is-active" [routerLink]="['products']">PRODUCTS</a>
-         <a routerLinkActive = "is-active" [routerLink]="['about']">ABOUT US</a>
-         <a routerLinkActive = "is-active" [routerLink]="['contact-us']">CONTACT US</a>
+         <a routerLinkActive = "is-active" [routerLink]="['/home']">HOME</a>
+         <a routerLinkActive = "is-active" [routerLink]="['/products']">PRODUCTS</a>
+         <a routerLinkActive = "is-active" [routerLink]="['/about']">ABOUT US</a>
+         <a routerLinkActive = "is-active" [routerLink]="['/faq']">FAQ</a>
+         <a routerLinkActive = "is-active" [routerLink]="['/contact-us']">CONTACT US</a>
      </nav>
      <span class="ham-close-btn" (click)="toggleNav()" [ngClass]="{ 'show': navbarOpen, 'dontshow': !navbarOpen }">&times;</span> 
-     <div id="hamtimes" [ngClass]="{ 'show': navbarOpen, 'dontshow': !navbarOpen }" >
-        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['home']">HOME</a>
-        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['products']">PRODUCTS</a>
-        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['about']">ABOUT US</a>
-        <a class="navitem nav-last" routerLinkActive = "is-active" [routerLink]="['contact-us']">CONTACT US</a>
-    </div>
+     <nav id="hamtimes" [ngClass]="{ 'show': navbarOpen, 'dontshow': !navbarOpen }" >
+        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['/home']">HOME</a>
+        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['/products']">PRODUCTS</a>
+        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['/about']">ABOUT US</a>
+        <a class="navitem" routerLinkActive = "is-active" [routerLink]="['/faq']">FAQ</a>
+        <a class="navitem nav-last" routerLinkActive = "is-active" [routerLink]="['/contact-us']">CONTACT US</a>
+     </nav>
 </header>

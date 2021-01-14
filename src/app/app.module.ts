@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-// import { faFacebook, faTwitter, faInstagram, faYoutube, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductsComponent } from './components/products/products.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import { ContactComponent } from './components/contact/contact.component';
     FooterComponent,
     ProductsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
@@ -31,9 +32,4 @@ import { ContactComponent } from './components/contact/contact.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  // constructor(private library: FaIconLibrary) {
-  //   library.addIcons(faFacebook, faTwitter, faInstagram, faYoutube, faLinkedin, faWhatsapp);
-  // }
-
-}
+export class AppModule {}
