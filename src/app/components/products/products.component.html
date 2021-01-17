@@ -9,159 +9,37 @@
 
     <section id="discover-pakages">
         <h2 class="section-title">Discover our super packages</h2>
-        <div class="package package1 card">
-            <img src="assets/product/forex.png" alt="">
-            <h4 class="section-title">Forex Investment</h4>
-            <p class="subtitle">Earn 30% returns on your investment in 30 days, guaranteed.</p>
-            <h5>How much can you invest?</h5>
-            <p>We currently accept minimum of 50,000 naira and maximum of 5 million naira.</p>
-            <h5>How long is the term of my investment?</h5>
-            <p>For now, term is a minimum of three (3) months and maximum of six (6) months.</p>
-            <h5>How is interest paid?</h5>
-            <p><strong> Simple interest</strong> - Get paid 30% the exact amount of money you invest in monthly e.g. when you invest 100,000 naira, you are paid 30% that is 30,000 at the end of every month until the end of term. </p>
-            <p><strong> Compound interest </strong>- Get paid the cumulative ROI derived from our reinvestment of the sum of your monthly interest with your principal (amount invested) in the subsequent months within the term. E.g., when you invest 100,000, in the first month, your interest of 30% should be 30,000.</p>
-            <p>This 30,000 will be added to your principal (100,000) to gives 130,000. This 130,000 will be reinvested in the second month.</p>
-            <p>This process continues till the end of term.</p>
-            <h5>Please Note:</h5>
-            <ul>
-                <li>Simple interest can be paid monthly or at the end of term. </li>
-                <li>Compound interest is paid only at the end of term.</li>
-                <li>Your principal will be paid at the end of term.</li>
-            </ul>
-
-            <div class="card calc-bg" [ngClass]="{ 'show-calc': calcOpen, 'hide-calc': !calcOpen }">
-                <div class="calc-content">
-                    <div class="calc-header">
-                        <p class="close-btn" (click)="toggleCalc()">&times;</p>
-                        <h3>Interest Calculator</h3>
-                        <p id="calc-interest">NGN <span id="calc-interest-val"> 0.00</span></p>
-                        <p class="calc-accr">Interest Accrued</p>
-                    </div>
-
-                    <div class="calc-body">
-                        <div class="calc-radio-container">
-                            <div class="radio">
-                                <input type="radio" name="interest" id="simpleInterest" value="simple interest" checked>
-                                <span></span>
-                                <label for="simpleInterest">Simple Interest</label>
-                            </div>
-                            <div class="radio">
-                                <input type="radio" name="interest" id="compoundInterest" value="compound interest">
-                                <span></span>
-                                <label for="compoundInterest">Compound Interest</label>    
-                            </div>
-                        </div>
-                        
-                    
-                        <div class="calc-other-inputs card">
-                            <label for="principal">Principal
-                                <input type="number" name="principal" id="principal">
-                            </label>
-                            <label for="interestRate">Interest Rate(%)
-                                <input type="number" name="interestRate" id="interestRate" value="30">
-                            </label>
-                            <label for="lengthOfTerm">Length Of Term (in months)
-                                <input type="number" name="lengthOfTerm" id="lengthOfTerm" value="3">
-                            </label>
-                        </div>
-
-                        <button class="btn">Calculate</button>
-                    </div>
-                    </div>
-
-            </div>
-            <button class="btn btn-toggle  calc-btn" (click)="toggleCalc()" [ngClass]="{ 'hide-calc': calcOpen, 'show-calc': !calcOpen }">Calculate</button>
-            <button class="btn calc-inv-btn">Invest</button>
+        
+        <div class="products-wrap">
+            <a [routerLink]="['forex-investment']">
+                <div class="package package1 card">
+                    <img src="assets/home/small/forex.png" alt="">
+                    <h4>Forex Investment</h4>
+                    <p>Earn 30% returns on your investment in 30 days, guaranteed.</p>
+                    <button class="btn">Invest Now</button>
+                </div>  
+            </a>
+    
+            <a [routerLink]="['food-contribution']">
+                <div class="package package2 card">
+                <img src="assets/home/small/contribution.png" alt="">
+                <h4>Food Contribution</h4>
+                <p>Discover how you can secure food for yourself/family.</p>
+                <button class="btn">Contribute Now</button>
+                </div>
+            </a>
+    
+            <a [routerLink]="['savings-and-loans']">
+                <div class="package package3 card">
+                    <img src="assets/home/small/Finance.png" alt="">
+                    <h4>Savings and loans</h4>
+                    <p>Save your money for targeted goals and easily access loans.</p>
+                    <button class="btn">Save Now/Apply for Loan</button>
+                </div>
+            </a>
         </div>
-        <div class="package package2 card">
-            <img src="assets/home//small/contribution.png" alt="">
-            <h4 class="section-title">Food Contribution</h4>
-            <p>Discover how you can secure food for yourself/family.</p>
-            <p>With our food contribution package you are able to secure food for yourself or your family when it matters most.</p>
-            <p>You will have to make a weekly contribution of a fixed amount depending on the package of your choice.</p>
-
-            <h5>Check out the packages</h5>
-
-            <ul>
-                <h6>Bronze (N750/week, N3,000/month)</h6>
-                <li> ½ Bag of foreign rice </li>
-                <li>1 carton of tin tomatoes</li>
-                <li>2L of Kings groundnut oil</li>
-                <li>1 carton of small size noodles</li>
-                <li>1 Crates of eggs</li>
-                <li>2 Sachet of salt</li>
-                <li>2 Sachets of Maggi seasoning</li>
-                <li>1 450g of milo tin</li>
-                <li>1 450g of peak milk tin</li>
-            </ul>
-
-
-            <ul>
-                <h6>Silver (N 1,500/week, N6,000/month)</h6>
-
-                <li>1 bag of foreign rice </li>
-                <li>1 carton of tin tomato</li>
-                <li>4L of kings’ groundnut oil</li>
-                <li>2 crates of eggs</li>
-                <li>1 packet of small size indomie noodles.</li>
-                <li>2 sachet of salt</li>
-                <li>2 sachets of Maggi seasoning </li>
-                <li>2 packs of spaghetti </li>
-                <li>1 900g peak milo tin </li>
-                <li> 1900g peak milk tin</li>
-                <li>2l of custard </li>
-                <li>3 packs of sardine</li>
-                <li>1 packet of sugar</li>
-                <li>1 3k gas cylinder/electric blender</li>
-            </ul>
-            
-            
-            <ul>
-                <h6>Gold (N2,250/week, N 9,000/month)</h6>
-
-                <li>1 bag of foreign rice </li>
-                <li>1 Carton of tin tomatoes </li>
-                <li>1 5L of kings’ groundnut oil</li>
-                <li>1 5L of kings’ groundnut oil</li>
-                <li>2 cartons of indomie noodles </li>
-                <li>3 sachets of salt</li>
-                <li>3 sachets of Maggi seasoning </li>
-                <li>1 900g milo tin</li>
-                <li>1 900g peak milk tin </li>
-                <li>1 4L of custard’</li>
-                <li>1 packet of sugar</li>
-                <li>2 pieces of blue band butter</li>
-                <li>1 packet of cornflakes</li>
-                <li>5 pieces of sardine</li>
-                <li>4 pieces of geisha</li>
-                <li>4 pack of cabin biscuit</li>
-
-            </ul>
-            
-            <button class="btn">Contribute Now</button>
-        </div>
-        <div class="package package3 card">
-            <img src="assets/home/small/Finance.png" alt="">
-            <h4 class="section-title">Savings and loans</h4>
-            <p>Save your money for targeted goals and easily access loans.</p>
-
-            <p>Save your money for targeted goals and get returns at the end of the month.</p>
-            <p>This savings can be towards a specific goal like school fees, or for paying rent.</p>
-            <p>This package is for daily contribution; you will collect the total amount at the end of the month.</p>
-            <p>It works like this.</p>
-            <ul>
-                <li>You decide the amount you want to be saving daily.</li>
-                <li>Buy the card and start saving.</li>
-            </ul>
-
-            <p>Our fee is only the amount used as savings. For example, if you decide to be saving N1000 daily, our charge is only N1000 at the end of the month </p>
-
-            <button class="btn">Save Now</button>
-        </div>
+ 
     </section>
-
 </main>
-
-
 
 <app-footer></app-footer>

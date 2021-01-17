@@ -49,11 +49,11 @@ span{
     width: 100%;
     background-color: white;
     font-weight: bold;
-    height: max-content;
+    /* height: max-content; */
     box-sizing: border-box;
     box-shadow: 0 3px 10px gray;
     grid-template-rows: repeat(5, 4em);
-    height: max-content;
+    height: 100vh;
     align-items: center;
 
 }
@@ -65,7 +65,7 @@ span{
     text-align: center;
     margin: 0 3em;
     padding: 1em 0;
-    border-bottom: 1px groove grey;
+    border-bottom: 1px solid rgba(187, 181, 181, 0.589);
     font-size: 1em
 
 }

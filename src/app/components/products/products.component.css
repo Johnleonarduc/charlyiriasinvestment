@@ -7,7 +7,6 @@ main{
     padding-top: 5em;
 }
 
-
 #hero {
     height: 30vh;
     width: 100%;
@@ -51,7 +50,17 @@ main{
     justify-items: center;
     align-items: center;
     margin-bottom: 2em;
-    /* gap: .5em; */
+    margin-top: 1em;
+    padding: 1em;
+    gap: .5em;
+    text-align: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .subtitle {
@@ -61,180 +70,17 @@ main{
 strong {
     font-style: italic;
 }
+
 .package img {
     width: 4em;
 }
 
 .package h4 {
-    color: white;
+    color: #1ea958;
     margin-bottom: 0;
     font-weight: bolder;
     margin-top: .5em;
 }
-
-h5 {
-    color: white;
-    text-align: left !important;
-    justify-self: left;
-    margin-top: 1em;
-    margin-bottom: 0;
-}
-
-.package1 p{
-    color: white;
-    text-align: left;
-    line-height: 1.2em;
-    opacity: 0.9;
-    padding-bottom: .5em;
-}
-
-.package1 {
-    margin-top: 1em;
-    background-color: #1ea958;
-    padding: 1em;
-}
-
-.package1 ul li {
-    color: white;
-}
-
-.btn-toggle {
-    background-color: white;
-    color: #f58634;
-    border: none;
-}
-
-.hide-calc {
-    display: none;
-}
-
-.show-calc {
-    display: grid;
-    position: relative;
-}
-
-.close-btn {
-    font-size: 1.5em;
-    text-align: right !important;
-    padding-right: .5em;
-    justify-self: right;
-    cursor: pointer;
-}
-
-.calc-header {
-    display: grid;
-    background-color: #f58634;
-    justify-items: center;
-    color: white;
-}
-
-.calc-body {
-    padding: 1em;
-    display: grid;
-    justify-items: center;
-    gap: 1em;
-}
-
-.calc-btn {
-    margin: 1em 0;
-}
-
-.calc-inv-btn {
-    position: relative;
-    bottom: -2em;
-}
-
-#calc-interest {
-    font-size: 2em;
-    padding-top: 1em;
-    padding-bottom: 0;
-}
-
-.calc-radio-container {
-    margin-bottom: 1em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.radio input[type='radio']{
-    display: none;
-}
-
-.radio {
-    display: grid;
-    grid-template-columns: .2fr 1fr;
-    align-items: center;
-    justify-items: left;
-}
-.radio span {
-    width: .8em;
-    height: .8em;
-    border-radius: 50%;
-    border: 3px solid #1ea958;
-    justify-self: right;
-    margin-right: 3px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-
-.radio span:after {
-    content: "";
-    height: .4em;
-    width: .4em;
-    background: #1ea958;
-    transform: scale(0);
-    border-radius: 50%;
-    transition: 300ms ease-in-out 0s;
-}
-
-.radio input[type="radio"]:checked ~ span:after {
-    transform: scale(1);
-}
-
-.calc-other-inputs {
-    padding: 1em;
-    display: grid;
-    grid-template-rows: 1fr;
-    row-gap: .5em;
-}
-
-.calc-other-inputs label {
-    color: #1ea958;
-    display: grid;
-    grid-template-columns: auto auto;
-    border-bottom: 1px solid rgba(187, 183, 183, 0.329);
-    padding-bottom: .5em;
-    font-weight: bold;
-}
-
-.calc-other-inputs input[type="number"] {
-    border: none;
-    background-color:lightgray;
-    color: black;
-    font-weight: bold;
-    font-size: 1em;
-    justify-self: right;
-    text-align: right;
-    padding-right: 5px;
-}
-
-.calc-other-inputs input[name="principal"] {
-    width: 60%;
-    /* display: inline-block; */
-}
-
-.calc-other-inputs input[name="interestRate"] {
-    width: 30%;
-    background: none;
-    /* display: inline-block; */
-}
-
-.calc-other-inputs input[name="lengthOfTerm"] {
-    width: 40%;
-    /* display: inline-block; */
-}
-
 
 @media screen and (min-width: 600px){
     
@@ -261,5 +107,12 @@ h5 {
 
     .hero-overlay h1{
        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .products-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: max-content;
+        gap: 2em;
     }
 }
