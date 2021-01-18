@@ -237,6 +237,7 @@ ul li {
     justify-self: right;
     text-align: right;
     padding-right: 5px;
+    height: 2em;
 }
 
 .calc-other-inputs input[name="principal"] {
