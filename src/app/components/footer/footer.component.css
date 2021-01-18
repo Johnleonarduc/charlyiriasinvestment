@@ -16,7 +16,7 @@ a {
 }
 
 fa-icon{
-    margin: .3em;
+    margin: .5em;
 }
 
 .social-icons fa-icon {
@@ -25,6 +25,7 @@ fa-icon{
 
 .social-icons {
     padding-top: 1em;
+    justify-self: center;
 }
 .address a:first-of-type{
     margin-right: 1em;

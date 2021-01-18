@@ -33,4 +33,69 @@ main{
 .hero-overlay h1{
     font-size: 1.3em;
     line-height: 1.5em;
+    align-self: start;
+}
+
+#hero-icon {
+    width: 4em;
+    align-self: end;
+}
+
+
+.package{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    padding: 1em;
+    gap: .5em;
+    text-align: center;
+    height: 100%;    
+    padding-bottom: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.subtitle {
+    text-align: center !important;
+    color: #1ea958;
+    font-weight: bolder;
+    padding: 1em 0;
+}
+
+.card {
+    padding: 1em 2em;
+    margin: 1em 0;
+}
+
+.card p,ul {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+
+.savloan-btn {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 800px){
+
+    .savloan-btn {
+        font-size: 1.5em;
+    }
+
+    .hero-overlay h1{
+        font-size: 2em !important;
+    }
+
+    #hero {
+        height: 40vh;
+        background-position: top;
+    }
 }

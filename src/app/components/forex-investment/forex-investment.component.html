@@ -1,5 +1,3 @@
-<app-header></app-header>
-
 <main>
     <section id="hero">
         <div class="hero-overlay">
@@ -36,42 +34,40 @@
                 <div class="calc-header">
                     <!-- <p class="close-btn" (click)="toggleCalc()">&times;</p> -->
                     <h3>Interest Calculator</h3>
-                    <p id="calc-interest">NGN <span id="calc-interest-val"> 0.00</span></p>
+                    <p id="calc-interest">NGN <span id="calc-interest-val"> {{interest | number : '1.2-2'}}</span></p>
                     <p class="calc-accr">Interest Accrued</p>
                 </div>
 
                 <div class="calc-body">
                     <div class="calc-radio-container">
                         <div class="radio">
-                            <input type="radio" name="interest" id="simpleInterest" value="simple interest" checked>
+                            <input type="radio" name="interestType" id="simpleInterest" value="simple interest" checked [(ngModel)]="interestType">
                             <span></span>
                             <label for="simpleInterest">Simple Interest</label>
                         </div>
                         <div class="radio">
-                            <input type="radio" name="interest" id="compoundInterest" value="compound interest">
+                            <input type="radio" name="interestType" id="compoundInterest" value="compound interest" [(ngModel)]="interestType">
                             <span></span>
                             <label for="compoundInterest">Compound Interest</label>    
                         </div>
                     </div>
-                
+
                     <div class="calc-other-inputs card">
                         <label for="principal">Principal
-                            <input type="number" name="principal" id="principal">
+                            <input type="number" name="principal" id="principal" autofocus [(ngModel)]="principal">
                         </label>
                         <label for="interestRate">Interest Rate(%)
-                            <input type="number" name="interestRate" id="interestRate" value="30" disabled>
+                            <input type="number" name="interestRate" id="interestRate" [ngModel]="interestRate" disabled>
                         </label>
                         <label for="lengthOfTerm">Length Of Term (in months)
-                            <input type="number" name="lengthOfTerm" id="lengthOfTerm" value="3">
+                            <input type="number" name="lengthOfTerm" id="lengthOfTerm" [(ngModel)]="lengthOfTerm">
                         </label>
                     </div>
-                    <button class="btn calc-btn-compute">Calculate</button>
-                </div>
+                    <button class="btn calc-btn-compute" (click)="calculator()">Calculate</button>
             </div>
         </div>
         <!-- <button class="btn btn-toggle  calc-btn" (click)="toggleCalc()" [ngClass]="{ 'hide-calc': calcOpen, 'show-calc': !calcOpen }">Calculate</button> -->
+    </div>
         <button class="btn calc-inv-btn">Invest</button>
     </div>
 </main>
-
-<app-footer></app-footer>

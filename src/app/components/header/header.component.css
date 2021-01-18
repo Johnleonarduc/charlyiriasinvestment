@@ -105,7 +105,8 @@ nav a.is-active{
         "logo   bizName     menu"
         /1fr       2fr      4fr
         ;
-        height: 3em;
+        height: 5em;
+        font-size: 1.2em;
     }
 
     #hambugger{

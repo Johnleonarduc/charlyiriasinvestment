@@ -63,7 +63,9 @@ a {
 }
 
 .subtitle {
-    text-align: center !important
+    text-align: center !important;
+    color: #1ea958;
+    font-weight: bolder;
 }
 
 strong {
@@ -74,27 +76,15 @@ strong {
     width: 4em;
 }
 
-.subtitle {
-    color: #1ea958;
-    font-weight: bolder;
+.package-description {
+    padding: 1em;
 }
+
 .package h4 {
     color: #1ea958;
     margin-bottom: 0;
     font-weight: bolder;
     margin-top: .5em;
-}
-
-.calc-inv-btn {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.calc-btn-compute {
-    background-color: white;
-    border: 2px solid #f58634;
-    color: #f58634;
 }
 
 .package h5 {
@@ -108,7 +98,6 @@ strong {
     padding-bottom: .5em;
 }
 
-
 ul li {
     text-align: left;
 }
@@ -119,6 +108,8 @@ ul li {
     border: none;
 }
 
+
+/* calculator css */
 .hide-calc {
     display: none;
 }
@@ -141,6 +132,7 @@ ul li {
     background-color: #f58634;
     justify-items: center;
     color: white;
+    padding-top: 1em;
 }
 
 .calc-body {
@@ -169,6 +161,19 @@ ul li {
     margin-bottom: 1em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+
+.calc-inv-btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.calc-btn-compute {
+    background-color: white;
+    border: 2px solid #f58634;
+    color: #f58634;
 }
 
 .radio input[type='radio']{
@@ -299,7 +304,6 @@ ul li {
 
     .package-description {
         grid-area: description;
-        padding: 1em;
     }
 
     .calc-bg {
