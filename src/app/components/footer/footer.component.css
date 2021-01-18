@@ -19,6 +19,10 @@ fa-icon{
     margin: .5em;
 }
 
+.credit {
+    justify-self: center;
+}
+
 .social-icons fa-icon {
     font-size: 1.5em;
 }

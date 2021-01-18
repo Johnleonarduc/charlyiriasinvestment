@@ -4,17 +4,17 @@
     <fa-icon id="hambugger" [icon]="faBars" size="2x" [styles]="{'stroke': '#1ea958', 'color': '#1ea958'}" [ngClass]="{ 'show': !navbarOpen, 'dontshow': navbarOpen}" (click)="toggleNav()"></fa-icon>
      <nav class="desk-menu">
          <a routerLinkActive = "is-active" [routerLink]="['/home']">HOME</a>
-         <a routerLinkActive = "is-active" [routerLink]="['/products']">PRODUCTS</a>
-         <!-- <a routerLinkActive = "is-active" [routerLink]="['/about']">ABOUT US</a> -->
-         <!-- <a routerLinkActive = "is-active" [routerLink]="['/faq']">FAQ</a> -->
+         <a routerLinkActive = "is-active" [routerLink]="['/products/forex-investment']">FOREX INVESTMENT</a>
+         <a routerLinkActive = "is-active" [routerLink]="['/products/food-contribution']">FOOD CONTRIBUTION</a>
+         <a routerLinkActive = "is-active" [routerLink]="['/products/savings-and-loans']">SAVINGS & LOANS</a>
          <!-- <a routerLinkActive = "is-active" [routerLink]="['/contact-us']">CONTACT US</a> -->
      </nav>
      <span class="ham-close-btn" (click)="toggleNav()" [ngClass]="{ 'show': navbarOpen, 'dontshow': !navbarOpen }">&times;</span> 
      <nav id="hamtimes" [ngClass]="{ 'show': navbarOpen, 'dontshow': !navbarOpen }" >
         <a (click)="toggleNav()" class="navitem" routerLinkActive = "is-active" [routerLink]="['/home']">HOME</a>
-        <a (click)="toggleNav()" class="navitem" routerLinkActive = "is-active" [routerLink]="['/products']">PRODUCTS</a>
-        <!-- <a (click)="toggleNav()" class="navitem" routerLinkActive = "is-active" [routerLink]="['/about']">ABOUT US</a> -->
-        <!-- <a (click)="toggleNav()" class="navitem" routerLinkActive = "is-active" [routerLink]="['/faq']">FAQ</a> -->
+        <a (click)="toggleNav()" class="navitem" routerLinkActive = "is-active" [routerLink]="['/products/forex-investment']">FOREX INVESTMENT</a>
+        <a (click)="toggleNav()" class="navitem" routerLinkActive = "is-active" [routerLink]="['/products/food-contribution']">FOOD CONTRIBUTION</a>
+        <a (click)="toggleNav()" class="navitem" routerLinkActive = "is-active" [routerLink]="['/products/savings-and-loans']">SAVINGS & LOANS</a>
         <!-- <a (click)="toggleNav()" class="navitem nav-last" routerLinkActive = "is-active" [routerLink]="['/contact-us']">CONTACT US</a> -->
      </nav>
 </header>
