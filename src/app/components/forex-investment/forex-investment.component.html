@@ -1,0 +1,94 @@
+<main>
+    <section id="hero">
+        <div class="hero-overlay">
+            <img id="hero-icon" src="assets/product/forex.png" alt="">
+            <h1 class="section-title">Forex Investment</h1>
+        </div>
+    </section>
+    <div class="package package1">
+        <div class="package-header">
+            <p class="subtitle">Earn 30% returns on your investment in 30 days, guaranteed.</p>
+        </div>
+     
+        <div class="package-description card">
+            <h5>How much can you invest?</h5>
+
+            <ul>
+                <li><strong> Simple interest:</strong> We currently accept minimum of 50,000 naira and maximum of 5 million naira.</li>
+                <li><strong> Compound interest:</strong> We currently accept minimum of 50,000 naira and maximum of 500,000 naira.</li>
+            </ul>    
+
+            <h5>How long is the term of my investment?</h5>
+            <p class="fix">We offer minimum investment term of three (3) months and a maximum of six(6) months.</p>
+            <h5>How is interest paid?</h5>
+            <ul>
+                <li><strong> Simple interest</strong> - Get paid 30% Return on Investment(ROI) of your investment capital in 30 days.</li>
+                <li><strong> Compound interest </strong>- Get paid the cumulative ROI derived from your investment at the end of your investment term.</li>
+            </ul>
+ 
+            <h5>Please Note:</h5>
+            <ul>
+                <li>Simple interest is paid on monthly basis till the end of term.</li>
+                <li>Compound interest is paid only at the end of term.</li>
+                <li>Your principal will be paid at the end of term.</li>
+            </ul>
+        </div>
+       
+
+        <div class="card calc-bg">
+            <div class="calc-content">
+                <div class="calc-header">
+                    <!-- <p class="close-btn" (click)="toggleCalc()">&times;</p> -->
+                    <h3>Interest Calculator</h3>
+                    <p id="calc-interest">NGN <span id="calc-interest-val"> {{interest | number : '1.2-2'}}</span></p>
+                    <p class="calc-accr">Interest Accrued</p>
+                </div>
+                <div class="calc-body">
+                    <div class="calc-radio-container">
+                        <div class="radio">
+                            <input type="radio" name="interestType" id="simpleInterest" value="simple interest" checked [(ngModel)]="interestType">
+                            <span></span>
+                            <label for="simpleInterest">Simple Interest</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="interestType" id="compoundInterest" value="compound interest" [(ngModel)]="interestType">
+                            <span></span>
+                            <label for="compoundInterest">Compound Interest</label>    
+                        </div>
+                    </div>
+
+                    <div class="calc-other-inputs card">
+                        <label for="principal">Principal
+                            <input type="number" name="principal" id="principal" [(ngModel)]="principal">
+                        </label>
+                        <label for="interestRate">Interest Rate(%)
+                            <input type="number" name="interestRate" id="interestRate" [ngModel]="interestRate" disabled>
+                        </label>
+                        <div class="lot-wrapper">
+                            <span> Length Of Term (in months):</span>
+                            <div class="calc-radio-container2">
+                                <div class="radio">
+                                    <input type="radio" name="lengthOfTerm" id="lengthOfTerm3" value="3" checked [(ngModel)]="lengthOfTerm">
+                                    <span></span>
+                                    <label for="lengthOfTerm3">3 Months</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="lengthOfTerm" id="lengthOfTerm6" value="6" [(ngModel)]="lengthOfTerm">
+                                    <span></span>
+                                    <label for="lengthOfTerm6">6 Months</label>    
+                                </div>
+                            </div>
+                            <!-- <input type="number" name="lengthOfTerm" id="lengthOfTerm" [(ngModel)]="lengthOfTerm"> -->
+                        </div>
+                    </div>
+                    <button class="btn calc-btn-compute" (click)="calculator()">Calculate</button>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="btn btn-toggle  calc-btn" (click)="toggleCalc()" [ngClass]="{ 'hide-calc': calcOpen, 'show-calc': !calcOpen }">Calculate</button> -->
+
+        <a class="btn calc-inv-btn" href="https://forms.gle/f7Nv5ZvDNNN99yQS9">
+            Invest
+        </a>
+    </div>
+</main>

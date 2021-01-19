@@ -1,0 +1,41 @@
+<main>
+    <section id="hero">
+        <div class="hero-overlay">
+            <h1>30% RETURNS<br> ON YOUR INVESTMENT. GUARANTEED.</h1>
+        </div>
+    </section>
+
+    <section id="discover-pakages">
+        <h2 class="section-title">Discover our super packages</h2>
+        
+        <div class="products-wrap">
+            <a [routerLink]="['forex-investment']">
+                <div class="package package1 card">
+                    <img src="assets/home/small/forex.png" alt="">
+                    <h4>Forex Investment</h4>
+                    <p>Earn 30% returns on your investment in 30 days, guaranteed.</p>
+                    <button class="btn">Invest Now</button>
+                </div>  
+            </a>
+    
+            <a [routerLink]="['food-contribution']">
+                <div class="package package2 card">
+                <img src="assets/home/small/contribution.png" alt="">
+                <h4>Food Contribution</h4>
+                <p>Discover how you can secure food for yourself/family.</p>
+                <button class="btn">Contribute Now</button>
+                </div>
+            </a>
+    
+            <a [routerLink]="['savings-and-loans']">
+                <div class="package package3 card">
+                    <img src="assets/home/small/Finance.png" alt="">
+                    <h4>Savings and loans</h4>
+                    <p>Save your money for targeted goals and easily access loans.</p>
+                    <button class="btn">Save Now/Apply for Loan</button>
+                </div>
+            </a>
+        </div>
+ 
+    </section>
+</main>

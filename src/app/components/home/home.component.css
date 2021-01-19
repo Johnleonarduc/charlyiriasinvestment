@@ -1,0 +1,615 @@
+:host{
+    padding: 0;
+    margin: 0;
+
+}
+
+main {
+    padding-top: 5em;
+}
+
+hr {
+    border: 1px solid rgba(187, 183, 183, 0.329);
+}
+
+#hero {
+    height: 30vh;
+    width: 100%;
+    background-image: url('../../../assets/home/small/hero.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.hero-overlay h1{
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+#intro-info {
+    padding: 0.5em 2em;
+}
+
+#intro-info p {
+    font-weight: bold;
+    padding: 1em 0;
+    line-height: 1.5;
+}
+
+
+.intro-info-caption{
+    text-align: center;
+    border: 2px solid #f58634;
+    border-radius: 5em;
+    width: 80%;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.intro-info-caption p {
+    display: grid;
+    justify-self: center;
+}
+
+.intro-info-getstarted {
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    margin: 1em 0;
+    padding: 0.2em 0.2em 0 0.2em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro-info-getstarted p {
+    margin-bottom: 0;
+}
+
+cite {
+    font-style: italic;
+}
+
+.intro-info-getstarted button {
+    position: relative;
+    bottom: -1em;
+}
+
+
+
+#why-invest-with-us {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.why-invest-with-us-upper-part {
+    width: 82%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+    outline: none;
+}
+
+.why-invest-with-us-upper-part h2 {
+    margin: 0;
+    width: 100%;
+}
+
+hr{
+    width: 80%;
+}
+
+
+.card-header {
+    background-color: #f58634;
+    color: white;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    text-align: center;
+    padding: 1em 0;
+    outline: none;
+}
+
+.why-invest-with-us-lower-part {
+    background-color: #1ea958;
+    width: 100%;
+    padding-bottom: 2em;
+    outline: none;
+    border: none;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.why-invest-with-us-lower-part div {
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    background-color: white;
+    padding: 1em 1em 1em 0.5em;
+    line-height: 1.3em;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -1em;
+    box-shadow: 2px 2px 7px rgba(179, 176, 176, 0.678);
+}
+
+.why-invest-with-us-lower-part ul {
+    margin-top :0;
+    outline: none;
+}
+
+#discover-pakages{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 1em 2em;
+    gap: 2em;
+}
+
+#discover-pakages h2 {
+    color: #f58634;
+    font-size: 1.2em;
+}
+
+.package{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: .5em;
+}
+
+.package img {
+    width: 4em;
+}
+.package h4 {
+    color: #1ea958;
+    margin-bottom: 0;
+    font-weight: bolder;
+    margin-top: .5em;
+}
+
+.package p{
+    color: #f58634;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+#who-we-are {
+    padding: 0 2em;
+    margin: 2em 0;
+}
+
+.ciil-brief-about{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 1em;
+    padding: 1em;
+    gap: 1em;
+}
+
+.ciil-brief-about:after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 2em;
+    border-bottom: 2px groove lightgray;
+}
+
+.ciil-brief-about p{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.ciil-unique-vals {
+    display: grid;
+    justify-items: center;
+    padding: 0 1em 1em 0;
+}
+
+.ciil-unique-vals h4 {
+    color: #f58634;
+    font-size: 1.3em;
+    margin: 0 0 1em 0;
+}
+
+
+#hear-from-partners{
+    display: grid;
+    grid-template: 
+    "test-heading   test-heading    test-heading"
+    "left-arrow     content         right-arrow"
+    /.5fr           3fr         .5fr;
+    justify-items: center;
+    margin: 2em 0;
+}
+
+#hear-from-partners h3 {
+    grid-area: test-heading;
+    color: #1ea958;
+    padding: 1em 0;
+    font-size: 1em;
+}
+
+.left-arrow {
+    grid-area: left-arrow;
+}
+
+.right-arrow {
+    grid-area: right-arrow;
+}
+
+.right-arrow, .left-arrow {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #1ea958;
+}
+
+.slide-indicators  {
+    margin-top: 1em;
+}
+
+.slide-indicators fa-icon{
+    margin: .2em;
+}
+
+.hear-from-partners-content {
+    grid-area: content;
+    display: grid;
+    justify-items: center;
+    text-align: justify;
+    width: 100%;
+    padding: 0;
+    margin:0
+}
+
+.hear-from-partners-content figcaption {
+    text-align: right;
+}
+
+.hear-from-partners-content figure {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.hear-from-partners-content h3 {
+    color: #1ea958;
+    margin-bottom: 0;
+}
+
+.hear-from-partners-content img {
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    bottom: -3em;
+
+}
+
+.content-testimonial {
+    background-color: #1ea958;
+    padding: 5em 1em 1em 1em;
+    color: white;
+    display: grid;
+    justify-items: center;
+}
+
+.content-testimonial figcaption{
+    display: grid;
+    justify-self: end;
+}
+
+#faq{   
+    width: 90%;
+    padding-bottom: 1em;
+    display: grid;
+    justify-items: center;
+    margin: 2em auto;
+}
+
+#faq h2 {
+    margin: 0;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.faq-body{
+    padding: 1em 1em 1em 0;
+}
+
+#call-to-action {
+    line-height: 1.3em;
+    width: 80%;
+    padding-bottom: 1em;
+    display: grid;
+    justify-items: center;
+    margin: 2em auto;
+    text-align: center;
+}
+
+#call-to-action figure {
+    color: #1ea958;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#call-to-action .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+} 
+
+@media screen and (min-width: 600px){
+    .hero-overlay h1{
+        font-size: 1.7em;
+        /* line-height: 1.5em; */
+    }
+
+    :host{
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .btn{
+        padding: 1em 3em;
+        font-size: 1.2em;
+    }
+
+    #discover-pakages h2 {
+        font-size: 1.5em;
+    }
+
+    .why-invest-with-us-lower-part div {
+        width: 77%;
+    }
+}
+
+@media screen and (min-width:800px){
+
+    #hero {
+        height: 40vh;
+        background-position: top;
+    }
+
+    .hero-overlay h1{
+       color: rgba(255, 255, 255, 0.9);
+    }
+    
+    
+    main {
+        padding-top: 3em;
+    }
+
+    #intro-info {
+        padding: 0 4em;
+        display: grid;
+        grid-template: 
+        "para       para"
+        "list       list"
+        "caption    get-started" max-content;
+        row-gap: 0;
+        margin-bottom: 2em;
+        font-size: .8em;
+    }
+
+    .intro-info-p{
+        grid-area: para;
+        margin: 0;
+    }
+
+    .intro-info-ul {
+        grid-area: list;
+        margin-top: 0;
+    }
+
+    .intro-info-caption {
+        grid-area: caption;
+        height: max-content;
+    }
+
+    .intro-info-getstarted {
+        grid-area: get-started;
+        height: max-content;
+        margin: 0;
+        padding: .2em;
+    }
+
+    .intro-info-getstarted p{
+        padding-bottom: 0  !important;
+    }
+
+    #why-invest-with-us {
+        margin-top: 2em;
+    }
+
+    .why-invest-with-us-lower-part div {
+        line-height: 1.5em;
+        width: 79.5%;
+    }
+
+    #discover-pakages {
+        margin: 2em 0;
+        padding: 0 4em;
+        grid-template: 
+        "discover-text  discover-text   discover-text"
+        "package1       package2        package3";
+        gap: 2em;
+    }
+
+    #discover-pakages h2{
+        grid-area: discover-text;
+    }
+
+    .package1 {
+        grid-area: package1;
+    }
+
+    .package2 {
+        grid-area: package2;
+    }
+
+    .package3 {
+        grid-area: package3;
+    }
+
+    .package {
+        display: grid;
+        grid-template: 
+        "package-image" 3fr
+        "package-title" 1fr
+        "package-descr" 2fr
+        "package-btn"  2fr
+        ;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .package img{
+        grid-area: package-image;
+    }
+
+    .package h4{
+        grid-area: package-title;
+        text-align: center;
+    }
+
+    .package p{
+        grid-area: package-descr;
+    }
+
+    .package button {
+        grid-area: package-btn;
+    }
+
+    #who-we-are {
+        padding: 0 4em;
+        /* margin: 2em 0; */
+    }
+    
+    .who-we-are-body{
+        display: grid;
+        grid-template: 
+        "wwa-heading    wwa-unique" 4em
+        "wwa-about      wwa-unique";
+    }
+
+    .ciil-brief-about{
+        grid-area: wwa-about;
+    }
+    
+    .ciil-brief-about:after{
+        display: none;
+    }
+    
+    .ciil-unique-vals {
+        grid-area: wwa-unique;
+        padding: 1em;
+    }
+    
+    .who-we-are-header {
+        grid-area: wwa-heading;
+    }
+    
+    .btn {
+        font-size: 0.8em;
+        padding: 1em 2em;
+    }
+    
+    #hear-from-partners{
+        margin-top: 0;
+    }
+
+    .hear-from-partners-content {
+        display: grid;
+        grid-template: 
+        "slide-img  slide-content"
+        ;
+        justify-items: end;
+        align-items: start;
+
+    }
+    
+    .hear-from-partners-content img {
+        grid-area: slide-img;
+        bottom:0;
+        right: -3.5em;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 80%;
+
+    }
+
+    .content-testimonial {
+        grid-area: slide-content;
+        display: grid;
+        grid-template: 
+        "slide-content-test"
+        "slide-content-author"
+        "slide-indicator";
+        padding: 2em;
+        gap: 1em;
+    }
+
+    
+    #hear-from-partners h3 {
+        justify-self: start;
+        margin-left: 15%;
+        font-size: 1.5em;
+    } 
+
+    .content-testimonial q{
+        grid-area: slide-content-test;
+        width: 80%;
+    }
+    
+    .content-testimonial figcaption {
+        grid-area: slide-content-author;
+        width: 80%;
+        justify-self: center;
+    }
+    
+    .slide-indicators {
+        grid-area: slide-indicator;
+    }
+
+    #faq-call-to-action {
+        display: grid;
+        grid-template: 
+        "faq   call-to-action"
+        ;
+        align-items: center;
+    }
+
+    #faq {
+        grid-area: faq;
+    }
+
+    #call-to-action {
+        grid-area: call-to-action;
+        height: max-content;
+    }
+
+}
+
