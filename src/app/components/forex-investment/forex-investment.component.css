@@ -148,7 +148,7 @@ ul li {
 
 .calc-inv-btn {
     position: relative;
-    bottom: -2em;
+    /* bottom: -2em; */
     color: white;
 }
 
