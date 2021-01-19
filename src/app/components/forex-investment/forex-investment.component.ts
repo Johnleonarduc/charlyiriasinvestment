@@ -9,7 +9,7 @@ export class ForexInvestmentComponent implements OnInit {
 
   principal:number = 0;
   interestRate:number = 30;
-  lengthOfTerm:number = 3;
+  lengthOfTerm:string = '3';
   interest:number = 0;
   simpleInterest:boolean =true;
   compoundInterest:boolean =false;
@@ -23,9 +23,9 @@ export class ForexInvestmentComponent implements OnInit {
 
   calculator(){
     if(this.interestType === 'simple interest'){
-        this.interest = this.principal*(this.interestRate/100)*(this.lengthOfTerm);
+        this.interest = this.principal*(this.interestRate/100)*(parseInt(this.lengthOfTerm, 10));
     }else if(this.interestType === 'compound interest'){
-      this.interest = this.principal*((1+ (this.interestRate/100))**(this.lengthOfTerm));
+      this.interest = this.principal*((1+ (this.interestRate/100))**(parseInt(this.lengthOfTerm, 10)));
     }else{
       this.interest = 0;
     }
