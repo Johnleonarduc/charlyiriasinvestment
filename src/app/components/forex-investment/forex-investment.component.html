@@ -38,9 +38,8 @@
         <div class="card calc-bg">
             <div class="calc-content">
                 <div class="calc-header">
-                    <!-- <p class="close-btn" (click)="toggleCalc()">&times;</p> -->
                     <h3>Interest Calculator</h3>
-                    <p id="calc-interest">NGN <span id="calc-interest-val"> {{interest | number : '1.2-2'}}</span></p>
+                    <p id="calc-interest">NGN <span id="calc-interest-val"> {{calculator() | number : '1.2-2'}}</span></p>
                     <p class="calc-accr">Interest Accrued</p>
                 </div>
                 <div class="calc-body">
@@ -78,15 +77,12 @@
                                     <label for="lengthOfTerm6">6 Months</label>    
                                 </div>
                             </div>
-                            <!-- <input type="number" name="lengthOfTerm" id="lengthOfTerm" [(ngModel)]="lengthOfTerm"> -->
                         </div>
                     </div>
-                    <button class="btn calc-btn-compute" (click)="calculator()">Calculate</button>
+                    <!-- <button class="btn calc-btn-compute" (click)="calculator()">Calculate</button> -->
                 </div>
             </div>
         </div>
-        <!-- <button class="btn btn-toggle  calc-btn" (click)="toggleCalc()" [ngClass]="{ 'hide-calc': calcOpen, 'show-calc': !calcOpen }">Calculate</button> -->
-
         <a class="btn calc-inv-btn" href="https://forms.gle/f7Nv5ZvDNNN99yQS9">
             Invest
         </a>
