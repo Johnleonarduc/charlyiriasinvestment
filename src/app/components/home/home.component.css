@@ -40,6 +40,17 @@ hr {
     line-height: 1.5em;
 }
 
+.tick-list-good li {
+    list-style: none;
+}
+
+.tick-list-good li:before {
+    content: "✓";
+    margin: 0 1em 0 -2em ;
+    color: #1ea958;
+    font-weight: bold;
+}
+
 #intro-info {
     padding: 0.5em 2em;
 }
@@ -423,6 +434,7 @@ hr{
         grid-area: list;
         margin-top: 0;
     }
+
 
     .intro-info-caption {
         grid-area: caption;
