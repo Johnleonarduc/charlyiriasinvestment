@@ -49,7 +49,6 @@ span{
     width: 100%;
     background-color: white;
     font-weight: bold;
-    /* height: max-content; */
     box-sizing: border-box;
     box-shadow: 0 3px 10px gray;
     grid-template-rows: repeat(5, 4em);
@@ -57,7 +56,6 @@ span{
     align-items: center;
 
 }
-
 
 .navitem{
     text-decoration: none;
@@ -67,14 +65,12 @@ span{
     padding: 1em 0;
     border-bottom: 1px solid rgba(187, 181, 181, 0.589);
     font-size: 1em
-
 }
 
 .nav-last {
     border-bottom: none;
     margin-bottom: 1em;
 }
-
 
 .desk-menu {
     display: none;

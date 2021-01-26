@@ -41,6 +41,17 @@ main{
     align-self: end;
 }
 
+.tick-list-good li {
+    list-style: none;
+}
+
+.tick-list-good li:before {
+    content: "✓";
+    margin: 0 1em 0 -2em ;
+    color: #1ea958;
+    font-weight: bold;
+}
+
 
 .package{
     display: grid;

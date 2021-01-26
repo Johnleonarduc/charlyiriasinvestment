@@ -49,7 +49,7 @@ main{
 .tick-list-good li:before {
     content: "✓";
     margin: 0 1em 0 -2em ;
-    color: #1ea958;
+    /* color: white; */
     font-weight: bold;
 }
 
