@@ -51,6 +51,14 @@ hr {
     font-weight: bold;
 }
 
+.good2 li:before{
+    content: "✧";
+}
+
+.good3 li:before{
+    content: "◈";
+}
+ 
 #intro-info {
     padding: 0.5em 2em;
 }

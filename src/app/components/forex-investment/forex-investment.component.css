@@ -119,6 +119,15 @@ ul li {
     font-weight: bold;
 }
 
+.good2 li:before{
+    content: "✧";
+}
+
+.good3 li:before{
+    content: "◈";
+}
+ 
+
 
 /* calculator css */
 .hide-calc {
