@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ForexInvestmentComponent implements OnInit {
 
   principal:number = NaN;
-  interestRate:number = 30;
+  interestRateSimple:number = 30;
+  interestRateCompound:number =20;
   lengthOfTerm:string = '3';
-  // interest:number = this.calculator();
   simpleInterest:boolean =true;
   compoundInterest:boolean =false;
   interestType:string = 'simple interest';
@@ -23,9 +23,18 @@ export class ForexInvestmentComponent implements OnInit {
 
   calculator(){
     if(this.interestType === 'simple interest'){
-        return this.principal*(this.interestRate/100)*(+this.lengthOfTerm);
+        return this.principal*(this.interestRateSimple/100)*(+this.lengthOfTerm);
     }else if(this.interestType === 'compound interest'){
-      return this.principal*((1+ (this.interestRate/100))**(+this.lengthOfTerm));
+      return this.principal*((1+ (this.interestRateCompound/100))**(+this.lengthOfTerm));
+    }else{
+      return 0;
+    }
+  }
+  chooseInterest(){
+    if(this.interestType === 'simple interest'){
+        return this.interestRateSimple;
+    }else if(this.interestType === 'compound interest'){
+      return this.interestRateCompound;
     }else{
       return 0;
     }
