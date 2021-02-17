@@ -422,7 +422,7 @@ hr{
     }
 
     #intro-info {
-        padding: 0 4em;
+        padding: 0 8em;
         display: grid;
         grid-template: 
         "para       para"
