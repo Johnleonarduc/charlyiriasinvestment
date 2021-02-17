@@ -121,6 +121,7 @@ nav a.is-active{
         margin: 1em;
         font-weight: semibold;
         font-size: .6em;
+        outline: none;
 
     }
 
